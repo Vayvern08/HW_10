@@ -1,0 +1,43 @@
+    1  git config --global user.name "Volodymyr Volosianskyi"
+    2  git config --global user.email vova.vls8@gamil.com
+    3  pwd
+    4  git clone https://github.com/Vayvern08/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .gitignore
+   10  git status
+   11  git commit -m ".gitignore changed"
+   12  git status
+   13  touch main_test.txt
+   14  git status
+   15  git add main_test.txt
+   16  git status
+   17  git commit -m "main_test created"
+   18  git checkout -b develop
+   19  git checkout develop
+   20  touch develop_test.txt
+   21  git status
+   22  git add develop_test.txt
+   23  git commit -m "develop_test created"
+   24  nano develop_test.txt
+   25  git status
+   26  git add develop_test.txt
+   27  git status
+   28  git commit -m "develop_test changed"
+   29  git status
+   30  git checkout main
+   31  git merge develop
+   32  git log
+   33  history 0 > command_list.csv
+   34  git status
+   35  git add command_list.csv
+   36  git status
+   37  git commit -m "command_list created"
+   38  git push
+   39  git remote -v
+   40  git remote set-url origin git@github.com:Vayvern08/HW_10.git
+   41  git remote -v
+   42  git push
+   43  history  > command_list.csv
